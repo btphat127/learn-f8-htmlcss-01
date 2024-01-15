@@ -52,6 +52,7 @@ a {
 }
 /* header */
 .header {
+    position: relative;
     height: 100vh;
     background: #E6F0FF;
 }
@@ -132,6 +133,12 @@ a {
 .hero-cta {
     margin-top: 40px;
     min-width: 17rem;
+}
+
+.header .house {
+    position: absolute;
+    bottom: 0 ;
+    right: 65px;
 }
 
 /* Clients */
@@ -575,10 +582,6 @@ a {
 .footer .footer-list {
     display: flex;
     gap: 185px;
-}
-
-.footer .column {
-
 }
 
 .footer .heading {
