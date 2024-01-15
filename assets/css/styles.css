@@ -113,15 +113,15 @@ a {
 /* hero */
 .hero-block {
     display:flex;
+    justify-content: center;
     flex-direction: column;
-    position: relative;
     height: calc(100vh - 90px);
     background: #E6F0FF;
 }
 
+
 .hero-block .info {
     width: 51%;
-    margin-top: 14rem;
 }
 
 .hero-block .sub-title {
@@ -156,7 +156,7 @@ a {
 .hero-block .house {
     position: absolute;
     bottom: 0 ;
-    right: 65px;
+    right: calc((100vw - 1110px) / 2 - 100px);
 }
 
 /* Clients */
