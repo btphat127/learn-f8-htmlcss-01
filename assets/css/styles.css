@@ -44,6 +44,10 @@ a {
     background: var(--primary-color);
 }
 
+.btn:hover {
+    opacity: 0.8;
+}
+
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 2);
@@ -95,10 +99,6 @@ a {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-}
-
-.action .action-log:hover {
-    opacity: 0.8;
 }
 
 .hero .info {
@@ -167,17 +167,22 @@ a {
 .clients-logo {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 70px;
 }
 
-.box {
+.clients-logo a {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 91px;
     min-width: 204px;
-    box-shadow: 0 3px 8px #333;
+    /* padding: 0 24px; */
     border-radius: 12px;
+}
+
+.clients-logo a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .box img {
