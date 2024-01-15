@@ -634,8 +634,8 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background-color: #f0eeee;
-    margin-right: 8px;
+    background-color: #f9f9f9;
+    margin-right: 16px;
 }
 
 .footer .social-link:hover {
