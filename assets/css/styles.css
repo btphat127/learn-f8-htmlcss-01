@@ -54,15 +54,20 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-/* header */
+
+/* Sticky-header */
+
 .header {
-    position: relative;
-    height: 100vh;
     background: #E6F0FF;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+    padding: 26px;
 }
 
 .navbar {
-    padding-top: 3.8rem;
+    /* padding-top: 3.8rem; */
+    padding: 12px 0;
     display: flex;
     align-items: center;
 }
@@ -101,12 +106,21 @@ a {
     font-weight: 500;
 }
 
-.hero .info {
+/* hero */
+.hero-block {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    height: calc(100vh - 116px);
+    background: #E6F0FF;
+}
+
+.hero-block .info {
     width: 51%;
     margin-top: 14rem;
 }
 
-.hero .sub-title {
+.hero-block .sub-title {
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
@@ -114,7 +128,7 @@ a {
     letter-spacing: 0.18px;
 }
 
-.hero .title {
+.hero-block .title {
     margin-top: 8px;
     color: #000336;
     font-size: 6.3rem;
@@ -122,7 +136,7 @@ a {
     line-height: 118.75%;
 }
 
-.hero .desc {
+.hero-block .desc {
     margin-top: 30px;
     color: #5A6473;
     font-size: 1.8rem;
@@ -135,7 +149,7 @@ a {
     min-width: 17rem;
 }
 
-.header .house {
+.hero-block .house {
     position: absolute;
     bottom: 0 ;
     right: 65px;
